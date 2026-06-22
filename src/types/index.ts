@@ -1,10 +1,10 @@
 export interface School {
   schoolName: string;
   ministryNumber: string;
-  stage: string;
-  educationType: string;
-  educationAdministration: string;
-  department: string;
+  stage?: string;
+  educationType?: string;
+  educationAdministration?: string;
+  department?: string;
 }
 
 export interface StudentRecord {
