@@ -1,26 +1,14 @@
 [
   {
     "schoolName": "عماد الدين زنكي المتوسطة",
-    "ministryNumber": "33076",
-    "stage": "المتوسطة",
-    "educationType": "حكومي عام",
-    "educationAdministration": "الإدارة العامة للتعليم بمحافظة جدة",
-    "department": "إدارة تقويم الأداء المعرفي والمهاري"
+    "ministryNumber": "33076"
   },
   {
     "schoolName": "الفيصلية الثانوية",
-    "ministryNumber": "12345",
-    "stage": "الثانوية",
-    "educationType": "حكومي عام",
-    "educationAdministration": "الإدارة العامة للتعليم بمنطقة الرياض",
-    "department": "إدارة تقويم الأداء المعرفي والمهاري"
+    "ministryNumber": "12345"
   },
   {
     "schoolName": "ابتدائية ابن خلدون",
-    "ministryNumber": "67890",
-    "stage": "الابتدائية",
-    "educationType": "حكومي عام",
-    "educationAdministration": "الإدارة العامة للتعليم بالمنطقة الشرقية",
-    "department": "إدارة تقويم الأداء المعرفي والمهاري"
+    "ministryNumber": "67890"
   }
 ]

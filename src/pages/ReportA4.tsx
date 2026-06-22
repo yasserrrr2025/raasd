@@ -154,64 +154,64 @@ export const ReportA4 = () => {
           
           {/* Main Stats (Right side) */}
           <div className="col-span-4 flex flex-col h-full">
-            <table className="w-full text-xs border-collapse border border-gray-300 flex-1">
+            <table className="w-full text-[11px] border-collapse border border-gray-300 flex-1">
               <thead className="bg-[#007A66] text-white">
                 <tr>
-                  <th colSpan={2} className="p-1 border border-gray-300 text-center">المؤشرات العامة</th>
+                  <th colSpan={2} className="py-0 px-1 border border-gray-300 text-center text-xs">المؤشرات العامة</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">العدد الكلي للطلاب</th>
-                  <td className="border border-gray-300 p-1 text-center font-bold">{stats.totalStudents}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">العدد الكلي للطلاب</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center font-bold">{stats.totalStudents}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">عدد المختبرين</th>
-                  <td className="border border-gray-300 p-1 text-center font-bold text-[#007A66]">{stats.testedStudents}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">عدد المختبرين</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center font-bold text-[#007A66]">{stats.testedStudents}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">عدد الغائبين</th>
-                  <td className="border border-gray-300 p-1 text-center font-bold text-red-600">{stats.absentStudents}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">عدد الغائبين</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center font-bold text-red-600">{stats.absentStudents}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">نسبة المختبرين</th>
-                  <td className="border border-gray-300 p-1 text-center" dir="ltr">{stats.testedPercentage.toFixed(1)}%</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">نسبة المختبرين</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center" dir="ltr">{stats.testedPercentage.toFixed(1)}%</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">نسبة الغائبين</th>
-                  <td className="border border-gray-300 p-1 text-center" dir="ltr">{stats.absentPercentage.toFixed(1)}%</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">نسبة الغائبين</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center" dir="ltr">{stats.absentPercentage.toFixed(1)}%</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">المتوسط</th>
-                  <td className="border border-gray-300 p-1 text-center font-bold">{stats.mean !== null ? stats.mean.toFixed(2) : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">المتوسط</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center font-bold">{stats.mean !== null ? stats.mean.toFixed(2) : '-'}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">الوسيط</th>
-                  <td className="border border-gray-300 p-1 text-center">{stats.median !== null ? stats.median.toFixed(2) : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">الوسيط</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center">{stats.median !== null ? stats.median.toFixed(2) : '-'}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">المنوال</th>
-                  <td className="border border-gray-300 p-1 text-center">{stats.mode !== null ? stats.mode.toFixed(2) : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">المنوال</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center">{stats.mode !== null ? stats.mode.toFixed(2) : '-'}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">الانحراف المعياري</th>
-                  <td className="border border-gray-300 p-1 text-center">{stats.standardDeviation !== null ? stats.standardDeviation.toFixed(2) : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">الانحراف المعياري</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center">{stats.standardDeviation !== null ? stats.standardDeviation.toFixed(2) : '-'}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">معامل الالتواء</th>
-                  <td className="border border-gray-300 p-1 text-center">{stats.skewness !== null ? stats.skewness.toFixed(2) : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">معامل الالتواء</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center">{stats.skewness !== null ? stats.skewness.toFixed(2) : '-'}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">أعلى درجة</th>
-                  <td className="border border-gray-300 p-1 text-center text-[#007A66] font-bold">{stats.highestScore !== null ? stats.highestScore : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">أعلى درجة</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center text-[#007A66] font-bold">{stats.highestScore !== null ? stats.highestScore : '-'}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">أقل درجة</th>
-                  <td className="border border-gray-300 p-1 text-center text-red-600 font-bold">{stats.lowestScore !== null ? stats.lowestScore : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">أقل درجة</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center text-red-600 font-bold">{stats.lowestScore !== null ? stats.lowestScore : '-'}</td>
                 </tr>
                 <tr>
-                  <th className="bg-gray-100 border border-gray-300 p-1 text-right font-medium">المدى</th>
-                  <td className="border border-gray-300 p-1 text-center">{stats.range !== null ? stats.range : '-'}</td>
+                  <th className="bg-gray-100 border border-gray-300 py-0 px-1 text-right font-medium">المدى</th>
+                  <td className="border border-gray-300 py-0 px-1 text-center">{stats.range !== null ? stats.range : '-'}</td>
                 </tr>
               </tbody>
             </table>
@@ -247,10 +247,12 @@ export const ReportA4 = () => {
                     <td className="border border-gray-300 p-1">{d.rangeStart}</td>
                     <td className="border border-gray-300 p-1">{d.rangeEnd}</td>
                     <td 
-                      className="border border-gray-300 p-1 font-bold"
+                      className="border border-gray-300 p-1 font-bold print-color-adjust-exact"
                       style={{ 
                         backgroundColor: gradeColors[d.label] || '#fff',
-                        color: ['متدني', 'ممتاز', 'جيد جداً'].includes(d.label) ? '#fff' : '#000'
+                        color: ['متدني', 'ممتاز', 'جيد جداً'].includes(d.label) ? '#fff' : '#000',
+                        WebkitPrintColorAdjust: 'exact',
+                        printColorAdjust: 'exact'
                       }}
                     >
                       {d.label}
@@ -285,9 +287,9 @@ export const ReportA4 = () => {
 
         {/* Footer */}
         <div className="mt-auto pt-4 border-t-2 border-gray-300 flex justify-between items-end shrink-0">
-          <div className="text-xs flex flex-col items-center">
-            <p className="font-bold text-gray-700 mb-1">مدخل البيانات:</p>
-            <p className="text-gray-900 border-b border-dashed border-gray-400 min-w-[150px] inline-block pb-1 text-center font-bold">
+          <div className="text-xs flex flex-col items-center min-w-[150px]">
+            <p className="font-bold text-gray-700 mb-1">مدخل البيانات</p>
+            <p className="text-gray-900 text-center font-bold">
               {project.dataEntryName || '________________________'}
             </p>
           </div>

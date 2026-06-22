@@ -5,7 +5,7 @@
   --color-primary-dark: #005F4F;
   --color-primary-light: #E5F2F0;
   
-  --font-sans: 'Cairo', system-ui, sans-serif;
+  --font-sans: 'Tajawal', system-ui, sans-serif;
 }
 
 @layer base {
@@ -16,6 +16,11 @@
 
 /* Hide elements when printing */
 @media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
   .no-print {
     display: none !important;
   }
