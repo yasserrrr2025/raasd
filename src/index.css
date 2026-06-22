@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #007A66; /* Ministry of Education Teal */
+  --color-primary-dark: #005F4F;
+  --color-primary-light: #E5F2F0;
+  
+  --font-sans: 'Cairo', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans antialiased;
+  }
+}
+
+/* Hide elements when printing */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  @page {
+    size: A4 portrait;
+    margin: 1cm;
+  }
+  
+  body {
+    background: white;
+  }
+}
